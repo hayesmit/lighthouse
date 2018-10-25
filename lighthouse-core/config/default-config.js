@@ -226,15 +226,12 @@ const defaultConfig = {
     },
     'pwa-fast-reliable': {
       title: 'Fast and reliable',
-      description: 'These are measures of how quickly the page loads, regardless of the quality of the network.',
     },
     'pwa-installable': {
       title: 'Installable',
-      description: 'Browsers can proactively prompt users to add your app to their homescreen, which can lead to higher engagement. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/install-prompt).',
     },
     'pwa-engaging': {
       title: 'Engaging',
-      description: 'These are opportunities for the page to improve user experience.',
     },
     'a11y-color-contrast': {
       title: 'Color Contrast Is Satisfactory',

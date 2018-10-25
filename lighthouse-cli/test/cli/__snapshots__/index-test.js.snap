@@ -811,47 +811,58 @@ Object {
     "pwa": Object {
       "auditRefs": Array [
         Object {
-          "id": "load-fast-enough-for-pwa",
-          "weight": 7,
-        },
-        Object {
+          "group": "pwa-fast-reliable",
           "id": "works-offline",
           "weight": 5,
         },
         Object {
-          "id": "webapp-install-banner",
-          "weight": 3,
+          "group": "pwa-fast-reliable",
+          "id": "load-fast-enough-for-pwa",
+          "weight": 7,
         },
         Object {
+          "group": "pwa-installable",
           "id": "is-on-https",
           "weight": 2,
         },
         Object {
-          "id": "redirects-http",
-          "weight": 2,
-        },
-        Object {
-          "id": "viewport",
-          "weight": 2,
-        },
-        Object {
+          "group": "pwa-installable",
           "id": "service-worker",
           "weight": 1,
         },
         Object {
-          "id": "without-javascript",
-          "weight": 1,
+          "group": "pwa-installable",
+          "id": "webapp-install-banner",
+          "weight": 3,
         },
         Object {
+          "group": "pwa-engaging",
+          "id": "redirects-http",
+          "weight": 2,
+        },
+        Object {
+          "group": "pwa-engaging",
           "id": "splash-screen",
           "weight": 1,
         },
         Object {
+          "group": "pwa-engaging",
           "id": "themed-omnibox",
           "weight": 1,
         },
         Object {
+          "group": "pwa-engaging",
+          "id": "viewport",
+          "weight": 2,
+        },
+        Object {
+          "group": "pwa-engaging",
           "id": "content-width",
+          "weight": 1,
+        },
+        Object {
+          "group": "pwa-engaging",
+          "id": "without-javascript",
           "weight": 1,
         },
         Object {
@@ -985,6 +996,15 @@ Object {
     },
     "metrics": Object {
       "title": "Metrics",
+    },
+    "pwa-engaging": Object {
+      "title": "Engaging",
+    },
+    "pwa-fast-reliable": Object {
+      "title": "Fast and reliable",
+    },
+    "pwa-installable": Object {
+      "title": "Installable",
     },
     "seo-content": Object {
       "description": "Format your HTML in a way that enables crawlers to better understand your app’s content.",
@@ -1237,6 +1257,15 @@ Object {
     },
     "metrics": Object {
       "title": "Metrics",
+    },
+    "pwa-engaging": Object {
+      "title": "Engaging",
+    },
+    "pwa-fast-reliable": Object {
+      "title": "Fast and reliable",
+    },
+    "pwa-installable": Object {
+      "title": "Installable",
     },
     "seo-content": Object {
       "description": "Format your HTML in a way that enables crawlers to better understand your app’s content.",

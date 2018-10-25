@@ -2918,48 +2918,59 @@
       "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
       "auditRefs": [
         {
-          "id": "load-fast-enough-for-pwa",
-          "weight": 7
-        },
-        {
           "id": "works-offline",
-          "weight": 5
+          "weight": 5,
+          "group": "pwa-fast-reliable"
         },
         {
-          "id": "webapp-install-banner",
-          "weight": 3
+          "id": "load-fast-enough-for-pwa",
+          "weight": 7,
+          "group": "pwa-fast-reliable"
         },
         {
           "id": "is-on-https",
-          "weight": 2
-        },
-        {
-          "id": "redirects-http",
-          "weight": 2
-        },
-        {
-          "id": "viewport",
-          "weight": 2
+          "weight": 2,
+          "group": "pwa-installable"
         },
         {
           "id": "service-worker",
-          "weight": 1
+          "weight": 1,
+          "group": "pwa-installable"
         },
         {
-          "id": "without-javascript",
-          "weight": 1
+          "id": "webapp-install-banner",
+          "weight": 3,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "redirects-http",
+          "weight": 2,
+          "group": "pwa-engaging"
         },
         {
           "id": "splash-screen",
-          "weight": 1
+          "weight": 1,
+          "group": "pwa-engaging"
         },
         {
           "id": "themed-omnibox",
-          "weight": 1
+          "weight": 1,
+          "group": "pwa-engaging"
+        },
+        {
+          "id": "viewport",
+          "weight": 2,
+          "group": "pwa-engaging"
         },
         {
           "id": "content-width",
-          "weight": 1
+          "weight": 1,
+          "group": "pwa-engaging"
+        },
+        {
+          "id": "without-javascript",
+          "weight": 1,
+          "group": "pwa-engaging"
         },
         {
           "id": "pwa-cross-browser",
@@ -3356,6 +3367,15 @@
     "diagnostics": {
       "title": "Diagnostics",
       "description": "More information about the performance of your application."
+    },
+    "pwa-fast-reliable": {
+      "title": "Fast and reliable"
+    },
+    "pwa-installable": {
+      "title": "Installable"
+    },
+    "pwa-engaging": {
+      "title": "Engaging"
     },
     "a11y-color-contrast": {
       "title": "Color Contrast Is Satisfactory",

@@ -523,14 +523,6 @@
         ]
       }
     },
-    "manifest-short-name-length": {
-      "id": "manifest-short-name-length",
-      "title": "The `short_name` won't be truncated on the homescreen",
-      "description": "Make your app's `short_name` fewer than 12 characters to ensure that it's not truncated on homescreens. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/manifest-short_name-is-not-truncated).",
-      "score": null,
-      "scoreDisplayMode": "not-applicable",
-      "rawValue": true
-    },
     "content-width": {
       "id": "content-width",
       "title": "Content is sized correctly for the viewport",
@@ -2968,10 +2960,6 @@
         {
           "id": "content-width",
           "weight": 1
-        },
-        {
-          "id": "manifest-short-name-length",
-          "weight": 0
         },
         {
           "id": "pwa-cross-browser",

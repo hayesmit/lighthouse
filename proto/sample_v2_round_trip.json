@@ -1227,13 +1227,6 @@
             "scoreDisplayMode": "manual", 
             "title": "The user's focus is directed to new content added to the page"
         }, 
-        "manifest-short-name-length": {
-            "description": "Make your app's `short_name` fewer than 12 characters to ensure that it's not truncated on homescreens. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/manifest-short_name-is-not-truncated).", 
-            "id": "manifest-short-name-length", 
-            "score": null, 
-            "scoreDisplayMode": "not_applicable", 
-            "title": "The `short_name` won't be truncated on the homescreen"
-        }, 
         "meta-description": {
             "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/description).", 
             "id": "meta-description", 
@@ -3081,10 +3074,6 @@
                 {
                     "id": "content-width", 
                     "weight": 1.0
-                }, 
-                {
-                    "id": "manifest-short-name-length", 
-                    "weight": 0.0
                 }, 
                 {
                     "id": "pwa-cross-browser", 

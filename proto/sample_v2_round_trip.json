@@ -3032,47 +3032,58 @@
         "pwa": {
             "auditRefs": [
                 {
-                    "id": "load-fast-enough-for-pwa", 
-                    "weight": 7.0
-                }, 
-                {
+                    "group": "pwa-fast-reliable", 
                     "id": "works-offline", 
                     "weight": 5.0
                 }, 
                 {
-                    "id": "webapp-install-banner", 
-                    "weight": 3.0
+                    "group": "pwa-fast-reliable", 
+                    "id": "load-fast-enough-for-pwa", 
+                    "weight": 7.0
                 }, 
                 {
+                    "group": "pwa-installable", 
                     "id": "is-on-https", 
                     "weight": 2.0
                 }, 
                 {
-                    "id": "redirects-http", 
-                    "weight": 2.0
-                }, 
-                {
-                    "id": "viewport", 
-                    "weight": 2.0
-                }, 
-                {
+                    "group": "pwa-installable", 
                     "id": "service-worker", 
                     "weight": 1.0
                 }, 
                 {
-                    "id": "without-javascript", 
-                    "weight": 1.0
+                    "group": "pwa-installable", 
+                    "id": "webapp-install-banner", 
+                    "weight": 3.0
                 }, 
                 {
+                    "group": "pwa-engaging", 
+                    "id": "redirects-http", 
+                    "weight": 2.0
+                }, 
+                {
+                    "group": "pwa-engaging", 
                     "id": "splash-screen", 
                     "weight": 1.0
                 }, 
                 {
+                    "group": "pwa-engaging", 
                     "id": "themed-omnibox", 
                     "weight": 1.0
                 }, 
                 {
+                    "group": "pwa-engaging", 
+                    "id": "viewport", 
+                    "weight": 2.0
+                }, 
+                {
+                    "group": "pwa-engaging", 
                     "id": "content-width", 
+                    "weight": 1.0
+                }, 
+                {
+                    "group": "pwa-engaging", 
+                    "id": "without-javascript", 
                     "weight": 1.0
                 }, 
                 {
@@ -3210,6 +3221,15 @@
         }, 
         "metrics": {
             "title": "Metrics"
+        }, 
+        "pwa-engaging": {
+            "title": "Engaging"
+        }, 
+        "pwa-fast-reliable": {
+            "title": "Fast and reliable"
+        }, 
+        "pwa-installable": {
+            "title": "Installable"
         }, 
         "seo-content": {
             "description": "Format your HTML in a way that enables crawlers to better understand your app\u2019s content.", 
